@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/Gobal network security design.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white; /* Set the text color to white */
+}

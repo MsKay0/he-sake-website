@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELSAKE ENTERPRISES</title>
+    <link rel="stylesheet" href="Become a Patner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img class="logo" src="images/logohe.JPG"></a>
+            <h1>HELSAKE ENTERPRISES</h1>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="Become a Patner.html">BECOME A PARTNER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="content">
+            <h1>Become a Partner</h1>
+            <p>Interested in becoming a reseller of the products we offer? Contact us now for more information:</p>
+            <p>Contact us:</p>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone-alt"></i> +255713735128</li>
+                <li><i class="fas fa-phone-alt"></i> +255712213465</li>
+                <li><i class="far fa-envelope"></i> admin@helsake.com.tz</li>
+            </ul>
+        </div>
+        <div class="form-container">
+            <form id="partnerForm" action="mailto:admin@helsake.com.tz" method="post">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="company">Company:</label><br>
+                <input type="text" id="company" name="company" required><br><br>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+<textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+
+                
+
+                <input type="submit" value="Submit">
+            </form>
+            <div id="successMessage" style="display:none; color:green;">Your message has been received.</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HELSAKE ENTERPRISES. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("partnerForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Show success message
+            document.getElementById("successMessage").style.display = "block";
+
+            // Reset form after 3 seconds
+            setTimeout(function() {
+                document.getElementById("partnerForm").reset();
+                document.getElementById("successMessage").style.display = "none";
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

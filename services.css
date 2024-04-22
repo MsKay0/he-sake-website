@@ -1,0 +1,98 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Change background color to white */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background-size: auto; /* Set background size to auto (no scaling) */
+    background-image: none; /* Remove background image */
+}
+
+#services h2 {
+  text-align: center;
+}
+  
+
+  
+  header {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .nav-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-links ul li {
+    margin-right: 15px;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right {
+    background-color: #e5e5e5;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  img {
+    max-width: 100%; /* Ensures image does not exceed its container's width */
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    width: 594px; /* Set the width to 594 pixels */
+    max-height: 849px; /* Limit the height to 849 pixels */
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+p {
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    max-width: 800px; /* Optional: Set maximum width */
+}
+.image-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container img {
+    max-width: 594px;
+    height: auto;
+    margin-right: 20px; /* Adjust margin as needed */
+  }
+  
+  .image-container p {
+    text-align: left;
+  }
+  
